@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      cadence
+HostName                       berkeley.localdomain
+ProcessIdentifier              1672
+ProcessCreationTime_UTC        1683309923
+ProcessCreationTime_Readable   Fri May  5 14:05:23 2023 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/cadence/new_work_wrk/new_work_lib/%Useful_%Microstrips/schematic/sch.oa.cdslck
+TimeEditLocked                 Sat May  6 07:56:28 2023 EDT

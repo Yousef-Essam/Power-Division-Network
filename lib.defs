@@ -1,0 +1,6 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+INCLUDE $HOME/Desktop/UnzippedLoc/RF_Passive_SMT_vendor_kit/lib.defs
+INCLUDE $HOME/Desktop/UnzippedLoc/Analog_Parts_vendor_kit/lib.defs
+DEFINE new_work_lib new_work_lib
+ASSIGN new_work_lib libMode shared
