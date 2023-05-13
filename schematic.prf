@@ -31,7 +31,7 @@ scaleY 1.000000
 toArcRadius 0.300000
 miterVertexLength 1.000000
 instanceRotate 1
-portOrientation 0.000000
+portOrientation 10000.000000
 plottingDepth 10
 bboxColor 0
 selectColor 0
@@ -44,7 +44,7 @@ portColor 5
 backgroundColor 42
 foregroundColor 10
 globalArcResolution 5.000000
-selectFilter 1535
+selectFilter 1519
 selectMode 1
 selectBoxSize 10.000000
 selectPointSize 8.000000
@@ -77,7 +77,7 @@ backupCount 20
 placePopUp 0
 checkIntersection 0
 checkBinding 0
-plotPinNumbers 0
+plotPinNumbers 1
 plotPinNames 0
 plotPins 1
 rerouteWires 1

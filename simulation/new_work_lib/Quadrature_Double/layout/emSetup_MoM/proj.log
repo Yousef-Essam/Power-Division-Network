@@ -1,0 +1,139 @@
+Momentum MomEngine_64 9.0.103 (*) 370.600 Mar  9 2011
+Simulation started on: Sat May 13 19:01:29 2023
+Simulation Mode: RF
+Substrate valid
+Automatically determined a snap distance of
+0.0021 mil for layout healing.
+
+--- WARNING -------------------------------------------------------------------
+
+Layout healing changed the layout. The actual
+highest aggregate snap distance was 0.001 mil.
+Further details have been written to the DRC
+report.
+
+
+-------------------------------------------------------------------------------
+Layout simplification started
+.........|.........|.........|.........| 
+Layout simplification finished
+Generating mesh at 5 GHz...
+Maximum number of threads allowed by license: 16
+S-parameter simulation
+S-parameter simulation started
+...initializing
+
+--- WARNING -------------------------------------------------------------------
+
+Layout is electrically large above 3.14 GHz (space wave radiation)
+
+
+-------------------------------------------------------------------------------
+
+--- WARNING -------------------------------------------------------------------
+
+Substrate is electrically large above 4.67 GHz (surface wave radiation)
+RF simulation can be less accurate as it ignores radiation
+Consider:  - lowering the maximum frequency
+           - simulating in MW mode
+
+
+-------------------------------------------------------------------------------
+...extracting layout
+...expanding thick conductors
+...reducing mesh
+Automatic selection: direct dense matrix solver
+Using multi-threading (8 threads)
+Adaptive frequency sweep started
+Simulation frequency [1] = 0 Hz
+...loading Green functions
+...allocating interaction matrix
+...loading quasi-static matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [2] = 5 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Adaptive:   0.0 % of frequency range covered
+Simulation frequency [3] = 3.33333 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [4] = 1.66667 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [5] = 277.778 MHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [6] = 4.44444 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [7] = 3.05556 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [8] = 1.2037 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [9] = 1.89815 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [10] = 4.53704 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [11] = 3.88889 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [12] = 3.7963 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [13] = 2.47685 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [14] = 4.07407 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [15] = 2.66975 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [16] = 92.5926 MHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [17] = 4.84568 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [18] = 2.28395 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [19] = 740.741 MHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [20] = 2.09105 GHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [21] = 586.42 MHz
+...solving interaction matrix
+...calibrating ports
+...calculating S-parameters
+Adaptive: 100.0 % of frequency range covered
+S-parameter simulation finished
+Simulation finished on: Sat May 13 19:01:51 2023

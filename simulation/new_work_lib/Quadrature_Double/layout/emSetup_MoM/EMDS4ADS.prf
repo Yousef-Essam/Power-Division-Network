@@ -1,0 +1,54 @@
+Begin_Block  Header 
+  
+  Mode  ASCII 
+  File_Name  /home/cadence/new_work_wrk/simulation/new_work_lib/Quadrature_Double/layout/emSetup_MoM/EMDS4ADS.prf 
+  Version  3.00 
+  
+End_Block  Header 
+
+Begin_Block  Data 
+  
+  Begin_Preferences 
+  
+  Begin_Material_Block 
+  Material __TOP     7.9215686274509800e-01      8.8235294117647056e-01      1.0000000000000000e+00  
+  Material cond     9.3333333333333335e-01      4.1568627450980394e-01      3.1372549019607843e-01  
+  Material __SubstrateLayer1     7.9215686274509800e-01      8.8235294117647056e-01      1.0000000000000000e+00  
+  Material closed_bottom     0.0000000000000000e+00      0.0000000000000000e+00      7.5294117647058822e-01  
+  End_Material_Block 
+  
+  Begin_Color_Block 
+  Object cond_2     9.3333333333333335e-01      4.1568627450980394e-01      3.1372549019607843e-01  
+  Object __SubstrateLayer1_2     7.9215686274509800e-01      8.8235294117647056e-01      1.0000000000000000e+00  
+  Object __TOP_2     7.9215686274509800e-01      8.8235294117647056e-01      1.0000000000000000e+00  
+  Object closed_bottom_2     0.0000000000000000e+00      0.0000000000000000e+00      7.5294117647058822e-01  
+  End_Color_Block 
+  
+  Begin_Visible_Block 
+  Object cond_2 1  0  0  
+  Object __SubstrateLayer1_2 1  0  0  
+  Object __TOP_2 1  0  0  
+  Object closed_bottom_2 1  0  70  
+  End_Visible_Block 
+  
+  Begin_Plane_Block 
+  Planes 0  
+  End_Plane_Block 
+  
+  Begin_Camera_Block 
+  Position     2.8799050903320312e+02      4.0497851562500000e+02      6.1109121093750000e+03  
+  Target     2.8799050903320312e+02      4.0497851562500000e+02      5.7933071136474609e+01  
+  Up     0.0000000000000000e+00      1.0000000000000000e+00      0.0000000000000000e+00  
+      2.4211916503906250e+03      2.4211916503906250e+03  
+  End_Camera_Block 
+  
+  Begin_Background_Block 
+  Top_Color     0.0000000000000000e+00      0.0000000000000000e+00      0.0000000000000000e+00  
+  Bottom_Color     0.0000000000000000e+00      0.0000000000000000e+00      0.0000000000000000e+00  
+  Shadow 0  
+  End_Background_Block 
+  
+  End_Preferences 
+  
+End_Block  Data 
+

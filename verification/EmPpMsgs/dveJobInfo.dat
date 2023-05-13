@@ -1,0 +1,5 @@
+jobName=EmPpMsgs
+jobType=emprep
+designName=new_work_lib:Quadrature_Double:layout
+ruleFilePath=
+addInfo="EM preprocessor messages displayed as DRC errors"

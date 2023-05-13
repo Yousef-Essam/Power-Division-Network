@@ -1,7 +1,7 @@
 pathWidth 25.000000
 pathBend 1
 pathRadius 2.000000
-pathMiterPercent 30.000000
+pathMiterPercent 50.000000
 textFontName HersheyRomanNarrow
 textPoint 12
 textHeight 10.000000
@@ -31,7 +31,7 @@ scaleY 1.000000
 toArcRadius 3.000000
 miterVertexLength 10.000000
 instanceRotate 1
-portOrientation 0.000000
+portOrientation 10000.000000
 plottingDepth 10
 bboxColor 3
 selectColor 99
@@ -60,7 +60,7 @@ majorGridDisplayX 5
 majorGridDisplayY 5
 majorGridDisplayOn 1
 gridDisplayMode 0
-gridSnapOn 1
+gridSnapOn 0
 gridSnapMode 3
 gridColor 104
 windowLLX -200.000000
@@ -77,7 +77,7 @@ backupCount 20
 placePopUp 1
 checkIntersection 0
 checkBinding 1
-plotPinNumbers 0
+plotPinNumbers 1
 plotPinNames 0
 plotPins 1
 rerouteWires 1

@@ -1,13 +1,6 @@
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="new_work_lib:Wilkinson_Mod_Microstrip:schematic"
-Optim:Optim1  OptimType="random" ErrorForm="L2" MaxIters=5000 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTemp=0.1 NumShootsPerIter=20 EnableCockpit=yes SaveAllTrials=no 
-Port:Term1  N__6 0 Num=1 Z=Z0 Ohm Noise=yes 
-R:R1  N__3 N__5 R=RT0 Ohm Noise=yes 
-MLIN2:TL10  N__12 N__1 Subst="MSub1" W=WT0 um L=LT0 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-Port:Term3  N__13 0 Num=3 Z=Z0 Ohm Noise=yes 
-Port:Term2  N__1 0 Num=2 Z=Z0 Ohm Noise=yes 
-model MSub1 MSUB H=1 mm Er=4.58 Mur=1 Cond=5.96e7 Hu=3.9e+34 mil T=35 um TanD=0.022 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1 MHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
-MLIN2:TL19  N__2 N__5 Subst="MSub1" W=WT1 um L=LT1 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="new_work_lib:Quadrature_Double:schematic"
+model MSub1 MSUB H=1.6 mm Er=4.58 Mur=1 Cond=5.96e7 Hu=3.9e+34 mil T=35 um TanD=0.022 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
@@ -20,17 +13,65 @@ OutputPlan:SP1_Output \
       UseSavedEquationNestLevel=yes \
       SavedEquationNestLevel=2
 
-MLIN2:TL5  N__3 N__10 Subst="MSub1" W=WT2 um L=LT2 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL20  N__5 N__9 Subst="MSub1" W=WT2 um L=LT2 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-R:R2  N__10 N__9 R=RT1 Ohm Noise=yes 
-MLIN2:TL8  N__10 N__12 Subst="MSub1" W=WT3 um L=LT3 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL21  N__9 N__13 Subst="MSub1" W=WT3 um L=LT3 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-R:R3  N__12 N__13 R=RT2 Ohm Noise=yes 
-MLIN2:TL7  N__2 N__3 Subst="MSub1" W=WT1 um L=LT1 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-OptimGoal:OptimGoal1 Expr="dB(S(1,1))" SimInstanceName="SP1" Weight=1 \
+MLIN2:TL34  N__22 N__10 Subst="MSub1" W=WT0 um L=LT0 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL33  N__8 N__6 Subst="MSub1" W=WT0 um L=LT0 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL32  N__9 N__4 Subst="MSub1" W=WT0 um L=LT0 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL21  N__23 N__11 Subst="MSub1" W=WT0 um L=LT0 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL38  N__12 N__13 Subst="MSub1" W=WT2 um L=LT2 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL11  N__14 N__15 Subst="MSub1" W=WT2 um L=LT2 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL10  N__16 N__17 Subst="MSub1" W=WT1 um L=LT1 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL14  N__18 N__19 Subst="MSub1" W=WT3 um L=LT1 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL37  N__24 N__25 Subst="MSub1" W=WT2 um L=LT2 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL35  N__26 N__27 Subst="MSub1" W=WT1 um L=LT1 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL36  N__28 N__29 Subst="MSub1" W=WT2 um L=LT2 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE_ADS:Tee9  N__8 N__25 N__27 Subst="MSub1" W1=WT0 um W2=WT2 um W3=WT1 um 
+MTEE_ADS:Tee7  N__24 N__13 N__19 Subst="MSub1" W1=WT2 um W2=WT2 um W3=WT3 um 
+MTEE_ADS:Tee6  N__12 N__10 N__17 Subst="MSub1" W1=WT2 um W2=WT0 um W3=WT1 um 
+MTEE_ADS:Tee5  N__29 N__9 N__26 Subst="MSub1" W1=WT2 um W2=WT0 um W3=WT1 um 
+
+WT0=1832.42
+Z0=50
+WT1=915.438 opt{ unconst }
+WT2=7008.77 opt{ unconst }
+WT3=5699.95 opt{ unconst }
+LT0=6000 noopt{ 8140 to 24400 }
+LT1=13634.7 opt{ unconst }
+LT2=13737 opt{ unconst }
+LT3=15245.3 opt{ unconst }
+MTEE_ADS:Tee3  N__15 N__28 N__18 Subst="MSub1" W1=WT2 um W2=WT2 um W3=WT3 um 
+MTEE_ADS:Tee2  N__11 N__14 N__16 Subst="MSub1" W1=WT0 um W2=WT2 um W3=WT1 um 
+Optim:Optim1  OptimType="random" ErrorForm="L2" MaxIters=5000 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTemp=0.1 NumShootsPerIter=20 EnableCockpit=yes SaveAllTrials=no 
+OptimGoal:OptimGoal8 Expr="dB(S(1,4))" SimInstanceName="SP1" Weight=1 \
 IndepVar[1]="freq" \
-SpecLimitLine[1]="OptimGoal1_limit1" 
-SpecLimitLine:"OptimGoal1_limit1" Type="LessThan" Max=-20 Weight=1 \
+SpecLimitLine[1]="OptimGoal8_limit1" 
+SpecLimitLine:"OptimGoal8_limit1" Type="LessThan" Max=-20 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
+OptimGoal:OptimGoal7 Expr="phase(S(2,1)/S(3,1))" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal7_limit1" SpecLimitLine[2]="OptimGoal7_limit2" 
+SpecLimitLine:"OptimGoal7_limit1" Type="GreaterThan" Min=85 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
+SpecLimitLine:"OptimGoal7_limit2" Type="LessThan" Max=95 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
+OptimGoal:OptimGoal6 Expr="dB(S(2,3))" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal6_limit1" 
+SpecLimitLine:"OptimGoal6_limit1" Type="LessThan" Max=-20 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
+OptimGoal:OptimGoal5 Expr="dB(S(4,4))" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal5_limit1" 
+SpecLimitLine:"OptimGoal5_limit1" Type="LessThan" Max=-20 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
+OptimGoal:OptimGoal4 Expr="dB(S(3,3))" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal4_limit1" 
+SpecLimitLine:"OptimGoal4_limit1" Type="LessThan" Max=-20 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
+OptimGoal:OptimGoal3 Expr="dB(S(2,2))" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal3_limit1" 
+SpecLimitLine:"OptimGoal3_limit1" Type="LessThan" Max=-20 Weight=1 \
 IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
 OptimGoal:OptimGoal2 Expr="dB(S(2,1)/S(3,1))" SimInstanceName="SP1" Weight=1 \
 IndepVar[1]="freq" \
@@ -39,37 +80,8 @@ SpecLimitLine:"OptimGoal2_limit1" Type="GreaterThan" Min=-0.2 Weight=1 \
 IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
 SpecLimitLine:"OptimGoal2_limit2" Type="LessThan" Max=0.2 Weight=1 \
 IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
-OptimGoal:OptimGoal3 Expr="dB(S(2,2))" SimInstanceName="SP1" Weight=1 \
+OptimGoal:OptimGoal1 Expr="dB(S(1,1))" SimInstanceName="SP1" Weight=1 \
 IndepVar[1]="freq" \
-SpecLimitLine[1]="OptimGoal3_limit1" 
-SpecLimitLine:"OptimGoal3_limit1" Type="LessThan" Max=-20 Weight=1 \
+SpecLimitLine[1]="OptimGoal1_limit1" 
+SpecLimitLine:"OptimGoal1_limit1" Type="LessThan" Max=-20 Weight=1 \
 IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
-OptimGoal:OptimGoal4 Expr="dB(S(3,3))" SimInstanceName="SP1" Weight=1 \
-IndepVar[1]="freq" \
-SpecLimitLine[1]="OptimGoal4_limit1" 
-SpecLimitLine:"OptimGoal4_limit1" Type="LessThan" Max=-20 Weight=1 \
-IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
-OptimGoal:OptimGoal6 Expr="dB(S(2,3))" SimInstanceName="SP1" Weight=1 \
-IndepVar[1]="freq" \
-SpecLimitLine[1]="OptimGoal6_limit1" 
-SpecLimitLine:"OptimGoal6_limit1" Type="LessThan" Max=-20 Weight=1 \
-IndepVar[1]="freq" IndepMin[1]=2 GHz IndepMax[1]=3 GHz 
-OptimGoal:OptimGoal8 Expr="dB(S(2,1))" SimInstanceName="SP1" Weight=1 \
-IndepVar[1]="freq" \
-SpecLimitLine[1]="OptimGoal8_limit1" 
-SpecLimitLine:"OptimGoal8_limit1" Type="GreaterThan" Min=-3.5 Weight=1 \
-IndepVar[1]="freq" IndepMin[1]=1.5 GHz IndepMax[1]=3.5 GHz 
-
-WT0=1832.42
-Z0=50
-WT1=756.628 opt{ unconst }
-WT2=1593 opt{ unconst }
-WT3=289.775 opt{ unconst }
-LT0=16274.9 noopt{ 8140 to 24400 }
-LT1=12078.3 opt{ unconst }
-LT2=5045.98 opt{ unconst }
-LT3=1473.47 opt{ unconst }
-RT0=230.997 opt{ unconst }
-RT1=40821.2 opt{ unconst }
-RT2=210.367 opt{ unconst }
-MLIN2:TL18  N__6 N__2 Subst="MSub1" W=WT0 um L=LT0 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 

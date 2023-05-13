@@ -1,0 +1,4 @@
+create_item("Gen_PI","Gen_PI","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","Gen_PI","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",0,NULL,0,
+create_parm("Zo","Zo",68608,"StdFormSet",1,prm("StdForm","50")),
+create_parm("E","E",68608,"StdFormSet",7,prm("StdForm","90")),
+create_parm("f","f",68608,"StdFormSet",0,prm("StdForm","2.5e9")));
